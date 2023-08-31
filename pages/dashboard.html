@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>E-Solutions - Dashboard</title>
+</head>
+<body>
+  <header class="header">
+    <img src="../images/logo.png" alt="E-Solutions Logo" class="logo" width="60" height="60">
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html">Features</a></li>
+        <li><a href="../index.html">Demo</a></li>
+        <li><a href="../index.html">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="../index.html">Contact</a></li>
+        <li><a href="registration.html">Register</a></li>
+        <li><a href="login.html">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content dashboard">
+    <div class="dashboard-welcome">
+      <h1>Welcome to Your Accounting Dashboard!</h1>
+      <p>Here, you have the power to take control of your financial journey.
+        Manage your finances, track expenses, generate reports,
+        and make informed decisions.</p>
+    </div>
+    <div class="dashboard-main">
+      <div class="dashboard-sidebar">
+        <ul>
+          <li><a href="#">Dashboard Overview</a></li>
+          <li><a href="#">Transactions</a></li>
+          <li><a href="#">Expenses</a></li>
+          <li><a href="#">Invoices</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div>
+      <div class="dashboard-content">
+        <div class="charts-container">
+          <div class="chart" id="incomeChart">
+            <canvas id="incomeCanvas"></canvas>
+          </div>
+          <div class="chart" id="expenseChart">
+            <canvas id="expenseCanvas"></canvas>
+          </div>
+        </div>
+        <div class="data-table" id="dataTable">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Transaction Type</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Table body will be populated using JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="col-12">&copy; 2023 E-Solutions. All rights reserved.</p>
+  </footer>
+
+  <script src="../scripts/dashboard.js"></script>
+  <script src="../scripts/navigation.js"></script>
+</body>
+</html>
